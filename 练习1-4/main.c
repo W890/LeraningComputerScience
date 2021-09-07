@@ -1,11 +1,11 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 int main()
 {
-	int vx;   /*vxÊÇintĞÍµÄ±äÁ¿*/
+	int vx;   /*vxæ˜¯intå‹çš„å˜é‡*/
 	
 	vx = 3.14;
 
-	printf("vxµÄÖµÊÇ%d¡£\n", vx);
+	printf("vxçš„å€¼æ˜¯%dã€‚\n", vx); 
 
 	return 0;
 } 

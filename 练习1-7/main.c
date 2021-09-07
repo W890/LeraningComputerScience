@@ -1,10 +1,10 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 
 int main()
 {
-	puts("Ìì");
-	puts("µØ");
-	puts("ÈË");
+	puts("å¤©");
+	puts("åœ°");
+	puts("äºº");
 
 	return 0;
 }
