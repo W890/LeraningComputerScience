@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main(void)
+int main()
 {
 	int vx;   /*vx是int型的变量*/
 	

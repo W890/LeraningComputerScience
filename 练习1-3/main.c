@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void)
+int main()
 {
 	printf("喂！ \n");  /*显示后换行*/
 	printf(" \n");    /*显示后换行*/

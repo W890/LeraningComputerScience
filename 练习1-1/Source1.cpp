@@ -6,7 +6,7 @@ int add(int a, int b)
 	return a + b;
 }
 
-int main(void)
+int main()
 {
 	printf("天 \n");   /*显示后换行*/
 	printf("地 \n");   /*显示后换行*/
