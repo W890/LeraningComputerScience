@@ -2,10 +2,8 @@
 
 int main()
 {
-	int vx, vy;
-
-	vx = 57;
-	vy = vx + 10;
+	int vx = 57;
+	int vy = vx + 57;
 
 	printf("vx的值是%d。 \n", vx);
 	printf("vy的值是%d。 \n", vy);
