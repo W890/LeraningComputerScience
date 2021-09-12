@@ -3,12 +3,12 @@
 
 int main()
 {
-	int no;
+	int num;
 
 	printf("请输入一个整数：");
-	scanf("%d", &no);
+	scanf("%d", &num);
 
-	printf("最后一位是%d。 \n", no % 10);
+	printf("符号取反之后的值是%d。 \n", -num);
 
 	return 0;
 }
