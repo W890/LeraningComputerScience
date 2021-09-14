@@ -8,11 +8,10 @@ int main()
 	printf("请输入一个整数：");
 	scanf("%d", &num);
 
-	if (num)
-		puts("该整数不是0。");
-	else {
-		puts("该整数是0。");
+	if ((num % 10) == 5)
+		puts("该整数的个位数是5。");
+	else
+		puts("该整数的各位数不是5。");
 
-		return 0;
-	}
+	return 0;
 }
