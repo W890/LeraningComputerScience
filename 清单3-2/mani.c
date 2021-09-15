@@ -8,8 +8,8 @@ int main()
 	printf("请输入一个整数：");
 	scanf("%d", &no);
 
-	if (no % 2);
-	puts("输入的整数是奇数。");
+	if (no % 2)
+		puts("输入的整数是奇数。");
 
 	return 0;
 }
