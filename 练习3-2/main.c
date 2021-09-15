@@ -11,9 +11,9 @@ int main()
 	if (no == 0)
 		puts("该整数为0。");
 	else if (no < 0)
-		puts("该整数为正数。");
-	else
 		puts("该整数为负数。");
+	else
+		puts("该整数为正数。");
 
 	return 0;
 }

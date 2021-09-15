@@ -13,7 +13,7 @@ int main()
 	else if (no > 0)
 		puts("该整数为正数。");
 	else
-		puts("该整数是正数。");
+		puts("该整数是负数。");
 
 		return 0;
 }
