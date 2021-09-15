@@ -10,7 +10,7 @@ int main()
 	printf("整数B:"); scanf("%d", &B);
 
 		if (A%B) 
-			puts("B不是A的约数。");
+			puts("B不是A的约数。。");
 		else
 			puts("B是A的约数");
 		
