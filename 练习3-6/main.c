@@ -12,7 +12,7 @@ int main()
 	scanf("%d", &n2);
 	printf("ÕûÊıÈı£º");
 	scanf("%d", &n3);
-
+	
 	min = n1;
 	if (n2 < min) min = n2;
 	if (n3 < min) min = n3;
