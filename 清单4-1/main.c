@@ -2,7 +2,8 @@
 #include <stdio.h>
 int main()
 {
-	int  retry;
+	int  retry=0;
+
 
 	do {
 		int no;
@@ -17,8 +18,8 @@ int main()
 
 			printf("要重复一次吗？ [yes...0/no...9]");
 			scanf("%d", &retry);
-		 while (retry == 0);
-	}
+		}
+	}while (retry == 0);
 	
 	return 0;
 }
