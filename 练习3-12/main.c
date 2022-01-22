@@ -9,7 +9,7 @@ int main()
 	scanf("%d", &no);
 
 	switch (no % 2) {
-	case 0: puts("该整数是奇数。"); break;
+	case 1: puts("该整数是奇数。"); break;
 	default: puts("该整数是偶数。");
 	}
 	return 0;
