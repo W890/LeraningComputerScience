@@ -4,16 +4,13 @@ int main()
 {
 	int A, B,min,max;
 
-	printf("请输入两个整数。");
+	printf("请输入两个整数。\n");
 	printf("整数A：");
 	scanf("%d", &A);
 	printf("整数B：");
 	scanf("%d", &B);
 
-	max = (A - B) > 0 ? A : B;
-	min = (A - B) < 0 ? A : B;
-
-		if (max - min <= 10 || max - min == 0)
+		if ((0 <= A - B && A - B <= 10) || (0 <= B - A && B - A <= 10))
 			printf("他们的差小于等于10");
 		else 
 			printf("他们的差大于等于11");
