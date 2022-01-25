@@ -4,14 +4,11 @@ int main()
 {
 	int no;
 
-	printf("请输入一个正整数：");
+	printf("请输入一个整数:");
 	scanf("%d", &no);
 
-	while (no >= 0) {
-		printf("%d ", no);
-		no--;
-	}
-	printf("\n");
+	while (no >= 1)
+		printf("%d ", no--);
 
 	return 0;
 }
