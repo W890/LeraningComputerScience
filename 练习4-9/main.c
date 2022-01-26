@@ -11,12 +11,12 @@ int main()
 	i = 0;
 
 	while (i < no) {
-		if (no % 2) 
-			printf("+");
-		else 
+		if (i % 2) 
 			printf("-");
+		else 
+			printf("+");
 		
-		no--;
+		i++;
 	}
 	return 0;
 }
