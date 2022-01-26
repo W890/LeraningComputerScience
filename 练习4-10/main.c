@@ -2,15 +2,14 @@
 #include <stdio.h>
 int main()
 {
-	int i, no;
+	int no;
 
-	printf("请输入一个整数：");
+	printf("正整数：");
 	scanf("%d", &no);
 
-	i = 2;
-	while (i <= no) {
-		printf("%d ", i);
-		i *= 2;
+	while (no-- > 0) {
+		putchar('*');
+		putchar('\n');
 	}
 	return 0;
 }

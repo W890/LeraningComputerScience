@@ -11,7 +11,6 @@ int main()
 	while (i <= no) {
 		printf("%d ", i);
 		i = i + 2;
-		printf("\n");
 	}
 	return 0;
 }

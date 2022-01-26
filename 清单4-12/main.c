@@ -4,13 +4,12 @@ int main()
 {
 	int i, no;
 
-	printf("请输入一个整数：");
+	printf("正整数：");
 	scanf("%d", &no);
 
-	i = 2;
-	while (i <= no) {
-		printf("%d ", i);
-		i *= 2;
-	}
+	for (i = 1; i <= no; i++)
+		putchar('*');
+	putchar('\n');
+
 	return 0;
 }
