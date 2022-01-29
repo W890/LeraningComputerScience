@@ -9,8 +9,12 @@ int main()
 	scanf("%d", &n);
 
 	for (i = 1; i <= n; i++)
-		if (n % i == 0) 
+		if (n % i == 0) {
 			printf("%d \n", i);
+			putchar('\n');
+			j++;
+		}
+	printf("约数有%d个。", j);
 
 	return 0;
 }
