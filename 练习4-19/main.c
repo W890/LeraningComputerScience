@@ -11,7 +11,6 @@ int main()
 	for (i = 1; i <= n; i++)
 		if (n % i == 0) {
 			printf("%d \n", i);
-			putchar('\n');
 			j++;
 		}
 	printf("约数有%d个。", j);
