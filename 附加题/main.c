@@ -2,8 +2,8 @@
 #include <stdio.h>
 int main()
 {
-	int BMI, gender,SW,A;
-	double stature, weight;
+	int gender;
+	double stature, weight,SW,BMI;
 
 	printf("你的身高是(m)：");
 	scanf("%lf", &stature);
@@ -16,19 +16,20 @@ int main()
 
 		
 	if (gender == 1) 
-		printf("标准体重是%.2f\tBMI是%.2f\n", SW = (weight - 100) * 0.9, weight / (stature * stature));
+		printf("标准体重是%.2f\tBMI是%.2f\n", SW = (stature*100 - 100) * 0.9, weight / (stature * stature));
 	else
-		printf("标准体重是%.2f\tBMI是%.2f\n", SW = (weight - 100) * 0.9 - 2.5, weight / (stature * stature));
+		printf("标准体重是%.2f\tBMI是%.2f\n", SW = (stature*100 - 100) * 0.9 - 2.5, weight / (stature * stature));
 
 	
-
-	if (A >= SW - (SW * 0.1) && A <= SW + (SW * 0.1))
+	if (weight < SW - (SW * 0.1))
+		printf("偏瘦。");
+	else if (weight >= SW - (SW * 0.1) && weight <= SW + (SW * 0.1))
 		printf("正常体重。");
-	else if (A > SW - (SW * 0.1) && A < SW + (SW * 0.2))
+	else if (weight > SW - (SW * 0.1) && weight < SW + (SW * 0.2))
 		printf("超重。");
-	else if (A > SW - (SW * 0.2) && A < SW + (SW * 0.3))
+	else if (weight > SW - (SW * 0.2) && weight < SW + (SW * 0.3))
 		printf("轻度肥胖。");
-	else if (A > SW - (SW * 0.3) && A < SW + (SW * 0.5))
+	else if (weight > SW - (SW * 0.3) && weight < SW + (SW * 0.5))
 		printf("中度肥胖。");
 	else 
 		printf("重度肥胖。");
