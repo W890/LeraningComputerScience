@@ -23,13 +23,13 @@ int main()
 	
 	if (weight < SW - (SW * 0.1))
 		printf("偏瘦。");
-	else if (weight >= SW - (SW * 0.1) && weight <= SW + (SW * 0.1))
+	else if (weight < SW + (SW * 0.1))
 		printf("正常体重。");
-	else if (weight > SW - (SW * 0.1) && weight < SW + (SW * 0.2))
+	else if (weight < SW + (SW * 0.2))
 		printf("超重。");
-	else if (weight > SW - (SW * 0.2) && weight < SW + (SW * 0.3))
+	else if (weight < SW + (SW * 0.3))
 		printf("轻度肥胖。");
-	else if (weight > SW - (SW * 0.3) && weight < SW + (SW * 0.5))
+	else if (weight < SW + (SW * 0.5))
 		printf("中度肥胖。");
 	else 
 		printf("重度肥胖。");
