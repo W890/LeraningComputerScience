@@ -15,9 +15,6 @@ int main()
 		for (j = 0; j < (len - i) * 2 + 1; j++) {
 			printf("%d", i % 10);
 		}
-		for (j = 0; j < i - 1; j++) {
-			putchar(' ');
-		}
 		putchar('\n');
 	}
 
