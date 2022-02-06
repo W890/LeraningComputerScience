@@ -45,7 +45,7 @@ int main()
 	putchar('\n');
 	printf("-----------------------------------------------\n");
 	for (j = 0; j <= 100; j += 10) {
-		printf(" %d ", j);
+		printf(" %d", j);
 	}
 	return 0;
 }
