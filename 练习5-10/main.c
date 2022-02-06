@@ -21,6 +21,6 @@ int main()
             scanf("%d", &b[i][j]);
         }
     }
-    for (i = 0; i < 4; i++)   
+    return 0;
    
 }
