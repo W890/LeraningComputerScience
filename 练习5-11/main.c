@@ -6,7 +6,7 @@ int main()
 {   
     int i, j;
     int sum[NUMBER2] = { 0 };
-    int tensu[NUMBER1][NUMBER2] = { {85,96},{85,75},{95,63},{78,89},{56,86,},{82,86} };
+    int array[NUMBER1][NUMBER2] = { {85,96},{85,75},{95,63},{78,89},{56,86,},{82,86} };
     int score[NUMBER1] = { 0 };
 
     /*for (i = 0; i < 6; i++) {
@@ -17,7 +17,7 @@ int main()
     }*/
     for (j = 0; j < NUMBER2; j++) {
         for (i = 0; i < NUMBER1; i++) {
-            sum[j] += tensu[i][j];
+            sum[j] += array[i][j];
         }
     }
     for (j = 0; j < NUMBER2; j++)
@@ -27,7 +27,7 @@ int main()
 
     for (i = 0; i < NUMBER1; i++) {
         for (j = 0; j < NUMBER2; j++) {
-            score[i] += tensu[i][j];
+            score[i] += array[i][j];
         }
     }
     for (i = 0; i < NUMBER1; i++) {
