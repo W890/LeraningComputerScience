@@ -1,9 +1,7 @@
 #include <stdio.h>
 void put_count() {
     static i = 1;
-    printf("put-count:第%d次", i++);
-    putchar('\n');
-
+    printf("put-count:第%d次\n", i++);
 }
 int main() {
     int i;
