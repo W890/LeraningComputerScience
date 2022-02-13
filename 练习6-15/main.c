@@ -4,8 +4,7 @@ void put_count() {
     printf("put-count:µÚ%d´Î\n", i++);
 }
 int main() {
-    int i;
-    for (i = 0; i < 5; i++) {
+    for (int i = 0; i < 5; i++) {
         put_count();
     }
     return 0;
