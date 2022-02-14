@@ -1,14 +1,50 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+
+int count_bits(unsigned x)
+{
+	int bits = 0;
+	while (x) {
+		if (x & 1U)    bits++;
+		x >>= 1;
+	}
+
+	return (bits);
+}
+
+int int_bits(void)
+{
+	return count_bits(~0U);
+}
+
+void print_bits(unsigned x)
+{
+	int i;
+
+	for (i = int_bits() - 1; i >= 0; i--) {
+		unsigned xx = x >> i;
+		unsigned yy = xx & 1;
+		putchar(yy ? '1' : '0');
+	}
+	putchar('\n');
+}
+
 unsigned set_n(unsigned x, int pos, int n)
 {
 	unsigned j = 1;
+	print_bits(j);
 	for (int i = 1; i < n; i++) {
 		j <<= 1;
+		print_bits(j);
 		j |= 1;
+		print_bits(j);
 	}
 	j <<= pos;
+	print_bits(j);
 	
-	return j | x;
+	unsigned int y =  j | x;
+	print_bits(y);
+	return y;
 }
 unsigned reset_n(unsigned x, int pos, int n)
 {
@@ -19,25 +55,25 @@ unsigned reset_n(unsigned x, int pos, int n)
 	}
 	j <<= pos;
 	j =~j;
-	return j & x;
+	unsigned y = & x;
+	print_bits(y);
+	return y;
 }
 unsigned inverse_n(unsigned x, int pos, int n)
 {
 	unsigned j = 1;
-	int number;
 	for (int i = 1; i < n; i++) {
 		j <<= 1;
 		j |= 1;
 	}
 	j <<= pos;
-	void print_binary(unsigned int number);
-	{
-		if (number >> 1) {
-			print_binary(number >> 1);
-		}
-		putc((number & 1) ? '1' : '0', stdout);
-	}
-	return j ^ x;
+	print_bits(x);
+	print_bits(j);
+	unsigned y = j ^ x;
+	print_bits(y);
+	return y;
+
+
 }
 
 int main()

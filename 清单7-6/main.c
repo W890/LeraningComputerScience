@@ -1,4 +1,4 @@
-
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 int count_bits(unsigned x)
 {
@@ -20,8 +20,11 @@ int print_bits(unsigned x)
 {
     int i;
 
-    for (i = int_bits() - 1; i >= 0; i--)
-        putchar(((x >> i) & 1U) ? '1' : '0');
+    for (i = int_bits() - 1; i >= 0; i--) {
+        unsigned xx = x >> i;
+        unsigned yy = xx & 1;
+        putchar(yy ? '1' : '0');
+    }
 }
 int main()
 {
