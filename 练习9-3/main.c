@@ -14,7 +14,7 @@ int main()
             break;
         cnt++;
     }
-    for (i = 0; i <= cnt; i++) {
+    for (i = 0; i < cnt; i++) {
         if (strcmp(s[i], "$$$$$") != 0) {
             printf("s[%d] = \"%s\"\n", i, s[i]);
         }
