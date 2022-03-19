@@ -5,7 +5,7 @@ int str_chnum(const char s[], int c) {
     int i;
     int cnt = 0;
     for (i = 0; i < strlen(s); i++) {
-        if (s[i] == 'c') {
+        if (s[i] == c) {
             cnt++;
         }
     }

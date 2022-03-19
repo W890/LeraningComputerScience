@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 void sum_diff(int n1, int n2, int sum, int diff)
 {

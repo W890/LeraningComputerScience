@@ -4,7 +4,7 @@
 int str_char(const char s[], int c) {
     int i;
     for (i = 0; i < strlen(s); i++) {
-        if (s[i] == 'c')
+        if (s[i] == c)
             return i;
     }
     return -1;
