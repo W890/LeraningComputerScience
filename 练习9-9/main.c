@@ -1,26 +1,26 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 void rev_string(char s[]) {
-    int i;
-    int j;
-    j = strlen(s) - 1;
-    char temp[128];
-    for (i = 0; i <= j; i++) {
-        temp[i] = s[j - i];
-    }
-    for (i = 0; i <= j; i++) {
-        s[i] = temp[i];
-    }
+    int n;
+    int s[3];
 
+    for (int i = 0; i < n / 2; i++) {
+        rev_swap(s[i], s[n - i - 1]);
+    }
 }
 int main()
 {
-    char ch[128];
-    int i;
+    char s[128];
+    int i,n;
     printf("请输入字符串: ");
-    scanf("%s", ch);
-    rev_string(ch);
-    printf("更新后的字符串: %s", ch);
+    for (i = 0; i < 3; i++) {
+        printf("s[%d]:", i);
+        scanf("%s", &s[i]);
+    }
+    rev_string(s);
+    printf("更新后的字符串: %s", s);
+    for (i = 0; i < n; i++)
+        printf("%d ", s[i]);
 
     return 0;
 }
