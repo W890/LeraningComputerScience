@@ -1,33 +1,38 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
-#define NUMBER 3
-void rev_string(char s[][128], int n)
+#include <string.h>
+#define NUMBER 2
+void rev_swap(char* a, char* b)
 {
-    int i, j, k;
-    for (i = 0; i < n; i++) {
-        j = 0;
-        while (s[i][j]) {
-            j++;
-        }
-        for (k = 0; k < j / 2; k++) {
-            int temp;
-            temp = s[i][k];
-            s[i][k] = s[i][j - k - 1];
-            s[i][j - k - 1] = temp;
-        }
+    char c = *a;
+    *a = *b;
+    *b = c;
+}
+void rev_str(char s[], int len)
+{
+    for (int i = 0; i < len / 2; i++) {
+        rev_swap(&s[i], &s[len - i - 1]);
     }
 }
+
+int min(int a, int b)
+{
+    return (a < b ? a : b);
+}
+void rev_string(char s[][128], int sn, int n)
+{
+    for (int i = 0; i < sn; i++) {
+        rev_str(s[i], min(n, strlen(s[i])));
+    }
+}
+
 int main()
 {
     int i;
-    char str[NUMBER][128];
-    printf("请输入%d组字符串。\n", NUMBER);
-    for (i = 0; i < NUMBER; i++) {
-        printf("s[%d] = ", i);
-        scanf("%s", str[i]);
-    }
+    char str[NUMBER][128] = { "CES", "CBA"};
+
+    rev_string(str, NUMBER, 4);
     printf("以下为经过变换后的字符串。\n");
-    rev_string(str, NUMBER);
     for (i = 0; i < NUMBER; i++) {
         printf("s[%d] = \"%s\"\n", i, str[i]);
     }

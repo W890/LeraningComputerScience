@@ -19,6 +19,7 @@ int main()
 		scanf("%d", &v[i]);
 	}
 	reverse_array(v, LEN);
+
 	printf("逆转后的数组是: \n");
 	for (i = 0; i < LEN; i++)
 		printf("%d ", v[i]);

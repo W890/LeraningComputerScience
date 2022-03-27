@@ -1,26 +1,30 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include<stdio.h>
-void rev_string(char s[]) {
-    int n;
-    int s[3];
+#include <stdio.h>
+#include <string.h> 
+void rev_swap(char* a, char* b)
+{
+    char c = *a;
+    *a = *b;
+    *b = c;
+}
 
-    for (int i = 0; i < n / 2; i++) {
-        rev_swap(s[i], s[n - i - 1]);
+void rev_string(char s[], int len) {
+    for (int i = 0; i < len / 2; i++) {
+        rev_swap(&s[i], &s[len - i - 1]);
     }
 }
+
 int main()
 {
-    char s[128];
-    int i,n;
+    char s[128] = "SEC";
+    int i;
     printf("ÇëÊäÈë×Ö·û´®: ");
     for (i = 0; i < 3; i++) {
         printf("s[%d]:", i);
         scanf("%s", &s[i]);
     }
-    rev_string(s);
+    rev_string(s, strlen(s));
     printf("¸üÐÂºóµÄ×Ö·û´®: %s", s);
-    for (i = 0; i < n; i++)
-        printf("%d ", s[i]);
 
     return 0;
 }

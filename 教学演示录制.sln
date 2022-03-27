@@ -525,6 +525,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "清单10-8", "清单10-8\�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "清单10-9", "清单10-9\清单10-9.vcxproj", "{F602651F-2926-4497-A931-7D29C63A600F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "附加闰年判断", "附加闰年判断\附加闰年判断.vcxproj", "{F1E28E83-62CF-4998-A8F7-293B454DEEA6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -2621,6 +2623,14 @@ Global
 		{F602651F-2926-4497-A931-7D29C63A600F}.Release|x64.Build.0 = Release|x64
 		{F602651F-2926-4497-A931-7D29C63A600F}.Release|x86.ActiveCfg = Release|Win32
 		{F602651F-2926-4497-A931-7D29C63A600F}.Release|x86.Build.0 = Release|Win32
+		{F1E28E83-62CF-4998-A8F7-293B454DEEA6}.Debug|x64.ActiveCfg = Debug|x64
+		{F1E28E83-62CF-4998-A8F7-293B454DEEA6}.Debug|x64.Build.0 = Debug|x64
+		{F1E28E83-62CF-4998-A8F7-293B454DEEA6}.Debug|x86.ActiveCfg = Debug|Win32
+		{F1E28E83-62CF-4998-A8F7-293B454DEEA6}.Debug|x86.Build.0 = Debug|Win32
+		{F1E28E83-62CF-4998-A8F7-293B454DEEA6}.Release|x64.ActiveCfg = Release|x64
+		{F1E28E83-62CF-4998-A8F7-293B454DEEA6}.Release|x64.Build.0 = Release|x64
+		{F1E28E83-62CF-4998-A8F7-293B454DEEA6}.Release|x86.ActiveCfg = Release|Win32
+		{F1E28E83-62CF-4998-A8F7-293B454DEEA6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
