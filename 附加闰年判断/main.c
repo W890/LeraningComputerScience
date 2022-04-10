@@ -1,19 +1,24 @@
-#define _CRT_SECURE_NO_WARNINGS
+ï»¿#define _CRT_SECURE_NO_WARNINGS
+#include <stdlib.h>
 #include <stdio.h>
 void is_leap_year(int year)
 {
-	int x = year / 4;
+
+	if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
+	printf("%dæ˜¯é—°å¹´ã€‚\n", year);
+	else
+	printf("%dæ˜¯å¹³å¹´ã€‚\n", year);
 }
 int main()
 {
-	int x,year;
+	int y = 0;
 
-	printf("ÇëÊäÈëÄê·İ£º");
-	scanf("%d", year);
-	if (x = 0)
-		printf("ÈòÄê");
-	else
-		printf("Æ½Äê");
+	printf("è¾“â¼Šä½ è¦æŸ¥çš„å¹´ä»½ï¼š");
+	scanf("%d", &y);
+
+	is_leap_year(y);
+
+	system("pause");
 
 	return 0;
 }
