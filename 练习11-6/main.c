@@ -2,13 +2,12 @@
 #include <string.h>
 char* str_chr(char* s, int c)
 {
-	char* t = s;
+	char* t = NULL;
 	while (*s) {
 		if (*s == c) {
 			t = s;
 			break;
-		} else t = NULL;
-		s++;
+		} s++;
 	}
 	return t;
 }

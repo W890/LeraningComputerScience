@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <string.h>
 void put_string(const char* s)
-{
-	int len = 0;
-	for (len = 0; len < strlen(s); len++)
-		printf("%c", s[len]);
+{	
+	while (*s)
+		printf("%c", *s++);
+	return 0;
+	
 }
 int main()
 {
@@ -12,7 +13,7 @@ int main()
 	printf("ÇëÊäÈë×Ö·û´®:");
 	scanf_s("%s", str, 32);
 
-	printf("str=\"");
+	printf("str=%c", str);
 	put_string(str);
 	puts("\"");
 	return 0;

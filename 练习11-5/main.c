@@ -5,7 +5,7 @@ int str_chnum(const char* s, int c)
 	int len, num = 0;
 
 	for (len = 0; len < strlen(s); len++) {
-		if (*(s + len) == 'c')
+		if (*(s + len) == c)
 			num++;
 	}
 	return num;
@@ -13,7 +13,7 @@ int str_chnum(const char* s, int c)
 int main()
 {
 	char str[128];
-	char c = 'c';
+	char c = c;
 
 	printf("ÇëÊäÈë×Ö·û´®£º");
 	scanf_s("%s", str, 32);

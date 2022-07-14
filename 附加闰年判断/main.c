@@ -1,24 +1,28 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 #include <stdlib.h>
 #include <stdio.h>
-void is_leap_year(int year)
+int is_leap_year(int year)
 {
 
-	if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
-	printf("%d是闰年。\n", year);
+	if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
+		return 1;
 	else
-	printf("%d是平年。\n", year);
+		return 0;
 }
 int main()
 {
-	int y = 0;
+	int year;
 
-	printf("输⼊你要查的年份：");
-	scanf("%d", &y);
+	printf("输入你要查的年份：");
+	scanf("%d", &year);
 
-	is_leap_year(y);
-
+	if (is_leap_year(year) )
+		printf("%d是闰年。\n", year);
+	else 
+		printf("%d是平年。\n", year);
+		
 	system("pause");
+	
 
 	return 0;
 }
