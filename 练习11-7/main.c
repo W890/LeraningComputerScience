@@ -6,7 +6,7 @@ void str_toupper(char* s)
 {
 	while (*s) {
 		*s = toupper(*s);
-		*s++;
+		s++;
 	}
 }
 
@@ -14,7 +14,7 @@ void str_tolower(char* s)
 {
 	while (*s) {
 		*s = tolower(*s);
-		*s++;
+		s++;
 	}
 }
 
@@ -22,7 +22,7 @@ int main()
 {
 	char s[128];
 	printf("请输入字符串：");
-	scanf("%s", s, 32);
+	scanf("%s", s);
 
 	str_toupper(s);
 	printf("将字符串中的字母改为大写:%s\n", s);
