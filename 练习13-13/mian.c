@@ -23,7 +23,7 @@ int main()
 			/*while ((ch = fgetc(sfp)) != EOF)
 				fputc(ch, dfp);
 			fclose(dfp);*/
-			while (ch = fread(&ch, sizeof(int), 1, sfp) > 0) {
+			while (n = fread(&ch, sizeof(int), 1, sfp) > 0) {
 				fwrite(&ch, sizeof(int), 1, dfp);
 			}
 		}
