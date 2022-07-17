@@ -24,7 +24,7 @@ int main()
 				if (ch <= 'z' && ch >= 'a')
 					ch -= 32;
 				fputc(ch, dfp);
-				putchar(ch, dfp);
+				putchar(ch);
 			}
 			fclose(dfp);
 		}

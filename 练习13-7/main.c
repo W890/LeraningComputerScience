@@ -13,10 +13,8 @@ int main()
 	if ((fp = fopen(fname, "r")) == NULL)
 		printf("\a文件打开失败。\n");
 	else {
-		while ((ch = fgetc(fp)) != EOF) {
-			if (ch != '\n')
-				j++;
-		}
+		while ((ch = fgetc(fp)) != EOF)
+			j++;
 		fclose(fp);
 		printf("有%d个字符数。", j);
 	}

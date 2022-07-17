@@ -22,7 +22,7 @@ int main()
 		else {
 			while ((ch = fgetc(sfp)) != EOF) {
 				fputc(ch, dfp);
-				putchar(ch, dfp);
+				putchar(ch);
 			}
 			fclose(dfp);
 		}
