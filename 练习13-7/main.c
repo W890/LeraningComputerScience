@@ -1,6 +1,6 @@
 #define  _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
- 
+
 int main()
 {
 	int ch, j = 0;
@@ -14,11 +14,11 @@ int main()
 		printf("\a文件打开失败。\n");
 	else {
 		while ((ch = fgetc(fp)) != EOF) {
-			if (ch == '\n') 
+			if (ch != '\n')
 				j++;
 		}
 		fclose(fp);
-		printf("有%d行。", j);
+		printf("有%d个字符数。", j);
 	}
 	return 0;
 }
