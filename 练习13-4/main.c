@@ -10,9 +10,9 @@ int main()
 	fp = fopen("hw.dat", "w");
 
 	puts("输入名字，身高，体重：");
-	
-	fprintf(fp, "%-10s %5.1f %5.1f", name, height, weight);	
-	fscanf(fp, "%s%lf%lf", &name, &height, &weight);
+	while (scanf("%s%lf%lf", &name, &height, &weight) == 3) {
+		fprintf(fp, "%-10s %5.1f %5.1f", name, height, weight);
+	}
 	
 	fclose(fp);
 
