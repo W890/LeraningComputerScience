@@ -9,14 +9,14 @@ int main()
 	if ((fp = fopen("num.dat", "wb")) == NULL)
 		printf("\a文件打开失败。\n");
 	else {
-		fwrite(&num, sizeof(double), 10, fp);
+		fwrite(num, sizeof(double), 10, fp);
 		fclose(fp);
 	}
 
 	if ((fp = fopen("num.dat", "rb")) == NULL)
 		printf("\a文件打开失败。\n");
 	else {
-		fread(&num, sizeof(double), 10, fp);
+		fread(num, sizeof(double), 10, fp);
 		printf("从文件读取的数为%2.5f。\n", num);
 		fclose(fp);
 	}

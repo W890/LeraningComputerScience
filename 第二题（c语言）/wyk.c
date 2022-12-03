@@ -4,7 +4,7 @@
 
 int is_full_alpha_sentence(char str[], int n)
 {
-    int a[26] = { 0 }, j = 0,i;
+    int a[26] = { 0 },i;
 
     for (i = 0; i < n; i++) {    
         a[str[i] - 'a'] = 1;             
